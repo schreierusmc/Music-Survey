@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Music Survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="musicsurvey.css">
+<h1>Please fill out the form below to participate in my music survey</h1>
+<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+    <label>Name:<input type="text" name="myName" id="Name"></label>
+    <br><br>
+    <label>Email:<input type="email" name="email" id="Email"></label>
+    <br><br>
+    What are you favorites types of music?<br>
+    <fieldset>
+        <legend>Select Below</legend>
+    <input type="checkbox" name="Favorite Music" id="favR&R" value="Rock and Roll">
+    Rock and Roll<br>
+    <input type="checkbox" name="Favorite Music" id="favRap" value="Rap">
+    Rap / Hip Hop<br>
+    <input type="checkbox" name="Favorite Music" id="favCountry" value="Country">
+    Country<br>
+    <input type="checkbox" name="Favorite Music" id="favOther" value="Other">
+    Other<br>
+    </fieldset>
+    <br><br>
+    How often do you purchase music?<br>
+    <fieldset>
+        <legend>Select Below</legend>
+    <input type="radio" name="Music Buying" id="spentRarely" value="Rarely">
+    Rarely (Less than twice a month)<br>
+    <input type="radio" name="Music Buying" id="spentFrequently" value="Frequently">
+    Frequently (more than 5 times a month)<br>
+    <input type="radio" name="Music Buying" id="spentAlot" value="Alot">
+    All the time (more than twice a month)<br>
+    </fieldset>
+    <br><br>
+    Where do you listen to music?<br>
+    <fieldset>
+    <legend>Select Below</legend>
+    <select size="3" name="Locations" id="musicLocations">
+        <option value="Home">Home</option>
+        <option value="Work">Work</option>
+        <option value="School">School</option>
+        <option value="Gym">Gym</option>
+        <option value="While Driving">While Driving</option>
+    </select>
+    </fieldset>
+    <br><br>
+    What role does music play in your life?
+    <br><br>
+    <textarea name="comments" id="comments" cols="60" rows="3"> Enter your comments here
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">    
+</form>
